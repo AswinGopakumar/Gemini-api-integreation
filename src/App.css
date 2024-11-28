@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(37, 37, 37);
+  justify-content: center;
+}
+
+.components{
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+}
+
+.outputField{
+  background-color: rgba(71, 70, 70, 0.252);
+  width: 80vw;
+  max-width: 60rem;
+  
+  height: 60vh;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  word-wrap: break-word;
+}
+
+.searchBox{
+  background-color: rgb(54, 54, 54);
+  width: 55vw;
+  display: flex;
+
+  padding: 10px 10px;
+  border-radius: 17px;
+
+}
+
+.searchBox input{
+  border-style: hidden;
+  appearance: none;
+  outline: none;
+  background-color: transparent;
+
+  width: 100%;
+
+}
+
+
+
