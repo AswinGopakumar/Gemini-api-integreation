@@ -12,7 +12,8 @@ function App() {
   };
 
   // Function to handle API call
-  const handleRun = async () => {
+  const handleRun = async (e) => {
+    e.preventDefault()
     if (inputValue.trim() === '') {
       setOutput('Please enter a prompt.');
       return;
@@ -34,6 +35,7 @@ function App() {
       <div className="components">
         <div className="outputField">{output}</div>
         <div className="searchBox">
+          <form onSubmit={handleRun}>
           <input
             type="text"
             value={inputValue}
@@ -41,6 +43,7 @@ function App() {
             placeholder="Enter your prompt"
             
           />
+          </form>
           <button type='submit' onClick={handleRun}>Send</button>
         </div>
       </div>

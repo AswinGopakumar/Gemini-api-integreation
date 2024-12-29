@@ -45,5 +45,15 @@
 
 }
 
+.searchBox form{
+  border-style: hidden;
+  display: flex;
+  appearance: none;
+  outline: none;
+  background-color: transparent;
+
+  width: 100%;
+
+}
 
 
